@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="Screenshot 2024-01-05 203817.png" class="logo">
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <p class="line">|</p>
+            <li><a href="Resume.html">Resume</a></li>
+            <p class="line">|</p>
+            <li><a href="Projects.html">Projects</a></li>
+            <p class="line">|</p>
+            <li><a href="contack.html">Contact</a></li>
+        </ul>
+    </nav>
+    <section class="body">
+        <form id="ContactForm">
+            <div class="wrapper">
+                <h2>Contact</h2>
+                <p>looking forward to hear from you</p>
+                <br>
+                <div class="box"><input type="text" id="first" placeholder="First Name" required><i class='bx bxs-user'></i></div>
+                <div class="box"><input type="text" id="last" placeholder="Last Name" required><i class='bx bxs-lock-alt'></i></div>
+                <div class="box"><input type="email" id="email" placeholder="Email" required><i class='bx bxs-envelope'></i></div>
+                <div class="box"><input type="text" id="subject" placeholder="Subject" required><i class='bx bxs-message-alt-detail'></i></div>
+                <div class="box"><textarea id="message" placeholder="Your Message" required></textarea><i class='bx bxs-message-square-detail'></i></div>
+                <button type="submit" id="submitBtn" class="button">Submit</button>
+            </div>
+        </form>
+    </section>
+    <hr>
+    <footer>
+        <p class="info-item">Phone: 9901129847</p>
+        <br>
+        <p class="info-item">Email:kalshettyjagadish202@gmail.com</p>
+        <br>
+        <p class="info-item">Follow Me: <a href="https://www.linkedin.com/in/jagadish-kalshetty-44a4892a3?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="social-item">LinkedIn</a> <a href="https://www.instagram.com/jagadish_kalshetty_05?igsh=MXcyemZ6bnFrNzFsZw==" target="_blank" class="social-item">Instagram</a></p>
+    </footer>
+    <script>
+    document.getElementById("submitBtn").addEventListener("click", function(){
+        showReply();
+    });
+
+    function showReply() {
+        alert("Thank you for your message. We will get back to you soon.");
+    }
+</script>
+</body>
+</html>

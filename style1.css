@@ -1,0 +1,228 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color:#f1f1f1;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+#navbar ul{
+    display: flex;
+    padding: 23px 5px 23px 600px ;
+}
+#navbar ul li{
+    list-style: none;
+}
+#navbar ul li a{
+    display: block;
+    color: black;
+    padding: 12px 21px;
+    text-decoration: none;
+    font-size: larger;
+}
+#navbar ul li a:hover{
+    text-decoration: underline;
+    color: gray;
+}
+.line{
+    margin-top: 10px;
+}
+#container{
+    display: flex;
+    margin-top: 70px;
+}
+#img{
+    padding-left: 200px;
+    float:left;
+}
+#h1{
+    float: right;
+    padding-left: 50px;
+    padding-top: 60px;
+    font-size: 40px;
+    font-family: 'Inconsolata', monospace;
+    font-family: 'Source Code Pro', monospace;
+}
+#para{
+    padding-top: 180px;
+    font-family: 'Inconsolata', monospace;
+    font-family: 'Source Code Pro', monospace;
+    font-size: larger;
+    color: black;
+}
+.button{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 200px;
+}
+
+.btn1 {
+    background-color: #d0d326;
+    color: #000000;
+    border: none;
+    border-radius: 60%;
+    padding: 37px 0px;
+    margin-left: 15%;
+    text-align: center;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: monospace;
+    cursor: pointer;
+}
+
+.btn2 {
+    background-color: #dd646e;
+    color: #000000;
+    border: none;
+    border-radius: 60%;
+    padding: 30px 0px;
+    margin-right: 63%;
+    text-align: center;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: monospace;
+    cursor: pointer;
+}
+.btn1:hover, .btn2:hover {
+    background-color: #ffffff;
+}
+footer {
+    padding: 50px 0;
+    text-align: center;
+    font-family: 'Inconsolata', monospace;
+    font-family: 'Source Code Pro', monospace;
+}
+
+footer a {
+    color: #333;
+    padding: 0 5px;
+}
+
+footer a:hover {
+    color: #666;
+}
+#head{
+    font-family: 'Inconsolata', monospace;
+    font-family: 'Source Code Pro', monospace;
+    padding-left: 250px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.head2{
+    font-family: 'Exo 2', sans-serif;
+    padding-top: 50px;
+    padding-left: 250px;
+}
+.p1{
+    margin-left: 40%;
+    margin-bottom: 5%;
+}
+#cont4{
+    display: flex;
+    justify-content: space-between;
+    padding: 7% 7%;
+}
+#h5{
+    font-family: 'Exo 2', sans-serif;
+}
+#p5{
+    font-family: 'Inconsolata', monospace;
+    font-family: 'Source Code Pro', monospace;
+}
+#img5{
+    width: 60%;
+    margin-left: 5%;
+}
+/* Form CSS */
+/* Form CSS */
+#ContactForm {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#ContactForm .wrapper {
+    width: 100%;
+    max-width: 600px;
+}
+
+#ContactForm .box {
+    width: 100%;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+#ContactForm .box input,
+#ContactForm .box textarea {
+    width: 100%;
+    padding: 15px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+#ContactForm .box input[type="text"],
+#ContactForm .box input[type="email"] {
+    padding-left: 45px;
+}
+
+#ContactForm .box textarea {
+    padding-top: 15px;
+    padding-left: 45px;
+    height: 150px;
+    resize: none;
+}
+
+#ContactForm .box i {
+    position: absolute;
+    top: 12px;
+    left: 15px;
+    font-size: 20px;
+    color: #999;
+    transition: 0.3s;
+}
+
+#ContactForm .box:hover input,
+#ContactForm .box:hover i {
+    background-color: #fff;
+    box-shadow: none;
+}
+
+#ContactForm button[type="submit"] {
+    width: 20%;
+    padding: 15px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #d4d239;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#ContactForm button[type="submit"]:hover {
+    background-color: #c5d439;
+}
+@media screen and (max-width: 50px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .container .button {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container .button button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
